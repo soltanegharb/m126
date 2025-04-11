@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl" class="h-100">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.rtl.min.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body class="h-100">
+    <main class="container h-100 p-4">
+      <h1 class="fs-5 mb-4">به اپ تودو خوش آمدید</h1>
+      <div class="row pt-5 g-5">
+        <section class="col-12 col-md-4">
+          <form id="todo-form">
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label"
+                >عنوان تودو</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="title"
+                aria-describedby="emailHelp"
+              />
+              <div id="emailHelp" class="form-text">
+                عنوان تودو خود را وارد کنید
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label"
+                >توضیحات تودو</label
+              >
+              <input type="text" class="form-control" id="description" />
+            </div>
+            <button type="submit" class="btn btn-dark">اضافه کردن</button>
+          </form>
+        </section>
+        <section class="col-12 col-md-8">
+          <table class="table">
+            <thead>
+              <tr class="text-center">
+                <th scope="col">#</th>
+                <th scope="col">عنوان</th>
+                <th scope="col">توضیحات</th>
+                <th scope="col">عملیات</th>
+              </tr>
+            </thead>
+            <tbody id="todo-table"></tbody>
+          </table>
+        </section>
+      </div>
+    </main>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
